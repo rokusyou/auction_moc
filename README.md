@@ -1,7 +1,5 @@
 # README
 
-docker-build reference = https://qiita.com/ProjectEuropa/items/004f8c8e6bbc1e4ef852
-
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

@@ -1,12 +1,13 @@
+<h3>Current Price</h3>
+<p id="price">2000<p>
+<button>BID!!</button>
+
 <script>
   'use strict'
   {
-    function bid(){
+    document.querySelector('button').addEventListener('click', () => {
       const current_price = document.querySelector('#price').textContent;
       document.querySelector('#price').textContent = parseInt(current_price) +1000;
-    }
-    setTimeout(bid, 1000);
+    });
   }
 </script>
-<h3>Current Price</h3>
-<p id="price">2000<p>

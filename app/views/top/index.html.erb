@@ -1,1 +1,11 @@
   Hello Rails
+<script>
+  'use strict'
+  {
+    function update(){
+      document.querySelector('h1').textContent = 'Changed!';
+    }
+    setTimeout(update, 1000);
+  }
+</script>
+<h1 id="current-price">1000<h1>

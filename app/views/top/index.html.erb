@@ -1,11 +1,12 @@
-  Hello Rails
 <script>
   'use strict'
   {
-    function update(){
-      document.querySelector('h1').textContent = 'Changed!';
+    function bid(){
+      const current_price = document.querySelector('#price').textContent;
+      document.querySelector('#price').textContent = parseInt(current_price) +1000;
     }
-    setTimeout(update, 1000);
+    setTimeout(bid, 1000);
   }
 </script>
-<h1 id="current-price">1000<h1>
+<h3>Current Price</h3>
+<p id="price">2000<p>

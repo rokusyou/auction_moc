@@ -1,10 +1,17 @@
 <h1>Items#show</h1>
-<tbody>
+<table>
   <tr>
+    <td>Name</td>
     <td><%= @item.name %></td>
+  </tr>
+  <tr>
+    <td>Price</td>
     <td><%= @item.price %></td>
+  </tr>
+  <tr>
+    <td>Description</td>
     <td><%= @item.description %></td>
   </tr>
-</tbody>
+</table>
 <td><%= link_to 'Return', '/' %></td>
 <%= button_to 'BID!!', { controller: 'items', action: 'bid'}, { params: { id: @item.id} } %>

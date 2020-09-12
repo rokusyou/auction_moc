@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :chats
-  resources :items
-  root to: 'rooms#index'
+  root to: 'chats#index'
   post 'items/bid'
 end

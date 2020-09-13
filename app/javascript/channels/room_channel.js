@@ -16,6 +16,11 @@ consumer.subscriptions.create("RoomChannel", {
 
   received(data) {
     console.log("received");
+
+    // トップに表示させた最新の投稿メッセージを更新します。
+    var latest_message = document.getElementById("latest_message");
+    latest_message.textContent = data.content.message;
+
     // 新しいP要素を用意します．
     var node = document.createElement("P");
     // 受信したメッセージを変数に入れます．

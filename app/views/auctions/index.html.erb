@@ -1,0 +1,16 @@
+<h1>Current Item</h1>
+<table>
+  <tr>
+    <td>Name</td>
+    <td><%= @item.name %></td>
+  </tr>
+  <tr>
+    <td>Price</td>
+    <td id="current_price"><%= @item.price.to_s(:delimited) %></td>
+  </tr>
+  <tr>
+    <td>Description</td>
+    <td><%= @item.description %></td>
+  </tr>
+</table>
+<%= button_to 'BID!!', { controller: 'auctions', action: 'bid'}, { params: { id: @item.id} } %>

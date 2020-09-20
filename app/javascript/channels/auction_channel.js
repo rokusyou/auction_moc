@@ -13,5 +13,8 @@ consumer.subscriptions.create("AuctionChannel", {
 
   received(data) {
     // Called when there's incoming data on the websocket for this channel
+    console.log("received auction channel");
+    var price = data.content;
+    console.log(price);
   }
 });

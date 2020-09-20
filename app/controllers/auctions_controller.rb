@@ -12,6 +12,8 @@ class AuctionsController < ApplicationController
         format.html { redirect_to action: :index }
         format.json { render :index }
         format.js
+      else
+        redirect_to action: :index
       end
     end
   end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/login', to: 'sessions#new'
   get 'sessions/new'
   get 'auctions/index'
   resources :items

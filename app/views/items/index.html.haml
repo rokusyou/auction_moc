@@ -1,0 +1,10 @@
+%h1 Items#index
+%p Find me in app/views/items/index.html.erb
+%table
+  %tbody
+    - @items.each do |item|
+      %tr
+        %td= item.name
+        %td= item.price
+        %td= item.description
+        %td= link_to "Show", item

@@ -1,0 +1,12 @@
+%h3 Current Price
+%p#price 2000
+%p
+  %button BID!!
+  :javascript
+    'use strict'
+    {
+      document.querySelector('button').addEventListener('click', () => {
+        const current_price = document.querySelector('#price').textContent;
+        document.querySelector('#price').textContent = parseInt(current_price) +1000;
+      });
+    }

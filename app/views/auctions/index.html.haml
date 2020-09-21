@@ -1,0 +1,14 @@
+%h1 Current Item
+%table
+  %tr
+    %td Name
+    %td= @item.name
+  %tr
+    %td Price
+    %td#current_price= @item.price.to_s(:delimited)
+  %tr
+    %td Description
+    %td= @item.description
+= button_to 'BID!!', { controller: 'auctions', action: 'bid'}, { params: { id: @item.id, user_id: session[:user_id]} }
+%div
+  = flash[:notice]

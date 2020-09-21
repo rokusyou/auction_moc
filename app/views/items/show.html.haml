@@ -1,0 +1,13 @@
+%h1 Items#show
+%table
+  %tr
+    %td Name
+    %td= @item.name
+  %tr
+    %td Price
+    %td= @item.price.to_s(:delimited)
+  %tr
+    %td Description
+    %td= @item.description
+%td= link_to 'Return', '/'
+= button_to 'BID!!', { controller: 'items', action: 'bid'}, { params: { id: @item.id} }

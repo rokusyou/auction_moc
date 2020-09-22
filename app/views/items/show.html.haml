@@ -5,9 +5,10 @@
     %td= @item.name
   %tr
     %td Price
-    %td= @item.price.to_s(:delimited)
+    %td= @item.price.to_s(:delimited) unless @item.price.nil?
   %tr
     %td Description
     %td= @item.description
-%td= link_to 'Return', '/'
+%td= link_to 'Return', items_path
+%td= link_to 'Edit', edit_item_path
 = button_to 'BID!!', { controller: 'items', action: 'bid'}, { params: { id: @item.id} }

@@ -19,7 +19,8 @@ class ItemsController < ApplicationController
     @item = Item.new(
                       name: item[:name],
                       price: item[:price],
-                      description: item[:description]
+                      description: item[:description],
+                      description: item[:image_path],
                     )
 
     respond_to do |format|
@@ -70,7 +71,7 @@ class ItemsController < ApplicationController
   end
 
   def item_params
-    params.require(:item).permit(:name, :price, :description)
+    params.require(:item).permit(:name, :price, :description, :image_path)
   end
 
 end

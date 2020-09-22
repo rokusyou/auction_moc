@@ -15,5 +15,10 @@
   .field
     = f.label :description
     = f.text_field :description
+  .field
+    = f.label :image_path
+    %div
+      = image_tag @item.image_path.url, size: "160x160"
+    = f.file_field :image_path
   .actions
     = f.submit 'Save'

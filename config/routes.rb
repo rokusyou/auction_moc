@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tests
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   get 'sessions/new'

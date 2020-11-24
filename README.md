@@ -4,9 +4,11 @@
 
 ### これまでにやったこと
 ・docker-composeで起動
+
 ・入札してaction cableによってDOM要素（入札価格）が更新される
 
-Things you may want to cover:
+
+## Things you may want to cover:
 
 * Ruby version
 

@@ -1,7 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## ライブオークションの技術調査用
+
+### これまでにやったこと
+・docker-composeで起動
+・入札してaction cableによってDOM要素（入札価格）が更新される
 
 Things you may want to cover:
 

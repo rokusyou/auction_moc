@@ -12,4 +12,5 @@ $ docker-compose build
 
 $ docker-compose run web bundle install
 
+$ docker-compose up -d 
 $ docker-compose run web bundle exec rake db:setup

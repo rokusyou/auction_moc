@@ -30,3 +30,4 @@
 yarn-debug.log*
 .yarn-integrity
 /public/uploads/item/image_path
+/data/minio

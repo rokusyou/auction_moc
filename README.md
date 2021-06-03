@@ -12,10 +12,12 @@
 
 ・入札してaction cableによってDOM要素（入札価格）が更新される
 
-### 立ち上げ
+### 立ち上げ手順
 $ docker-compose build
 
 $ docker-compose run web bundle install
+
+$ docker-compose run web yarn install --ckeck-files
 
 $ docker-compose up -d 
 
